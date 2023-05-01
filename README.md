@@ -6,6 +6,7 @@ College stuff
 
 - [GNU Compiler Collection](https://gcc.gnu.org/)
 - [GNU Make](https://www.gnu.org/software/make/)
+- [Unity](https://github.com/ThrowTheSwitch/Unity/)
 
 ## Getting Started
 
