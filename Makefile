@@ -1,15 +1,14 @@
-FILENAME       =
+FILENAME       = hello
 COMPILER       = gcc
 COMPILER_FLAGS = -Wall
 
 default: compile run
 
 compile:
-	$(COMPILER) $(FILENAME).c $(COMPILER_FLAGS) -o $(FILENAME).exe
+	$(COMPILER) ./src/$(FILENAME).c $(COMPILER_FLAGS) -o ./build/$(FILENAME)
 
 run:
-	./$(FILENAME).exe
+	./build/$(FILENAME)
 
 clean:
-	rm -f ./src/*/*.exe
-	rm -f ./tests/*/*.exe
+	rm -rf ./build/*
