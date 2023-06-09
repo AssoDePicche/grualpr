@@ -1,20 +1,16 @@
-FILENAME           = hello
+FILENAME           = main
 COMPILER           = gcc
-COMPILER_FLAGS     = -Wall -O -I$(INCLUDE_DIR)
-INCLUDE_DIR        = vendor
-DEPENDENCIES_FILES = ./vendor/unity/unity.c
+COMPILER_FLAGS     = -Wall -O
+SRC                = ./src/
+OUT                = ./bin/
 
-default: compile test clean
+default: compile run
 
 compile:
-	$(COMPILER) ./src/$(FILENAME).c $(COMPILER_FLAGS) -o ./build/$(FILENAME)
-
-test:
-	$(COMPILER) ./tests/$(FILENAME).spec.c $(DEPENDENCIES_FILES) $(COMPILER_FLAGS) -o ./build/$(FILENAME).spec.exe
-	./build/$(FILENAME).spec.exe
+	$(COMPILER) $(SRC)$(FILENAME).c $(COMPILER_FLAGS) -o $(OUT)$(FILENAME)
 
 run:
-	./build/$(FILENAME)
+	$(OUT)$(FILENAME)
 
 clean:
-	rm -rf ./build/*
+	rm -rf $(OUT)*.exe
