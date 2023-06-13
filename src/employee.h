@@ -8,4 +8,6 @@ typedef struct
 	double salary;
 } Employee;
 
+void printEmployee(const Employee employee);
+
 #endif
