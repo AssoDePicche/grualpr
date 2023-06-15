@@ -9,7 +9,7 @@ Final project of algorithms and programming logic of the control and automation 
 
 ## Getting Started
 
-Make sure that you have [GNU Make] installed, then clone this repository and build the app.
+Make sure that you have [GNU Make](https://www.gnu.org/software/make/) and [GCC](https://gcc.gnu.org/) installed, then clone this repository and build the app.
 
 ```bash
 git clone git@github.com:AssoDePicche/grualpr.git
