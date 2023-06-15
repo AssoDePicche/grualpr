@@ -4,7 +4,7 @@
 
 typedef struct
 {
-	unsigned int key
+	unsigned int key;
 } id;
 
 void describe_id(const id id);
