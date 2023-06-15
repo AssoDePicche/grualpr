@@ -7,8 +7,6 @@ typedef struct
 	unsigned int key;
 } id;
 
-void describe_id(const id id);
-
 id generate_id();
 
 #endif
