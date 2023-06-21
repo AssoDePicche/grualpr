@@ -3,5 +3,5 @@
 
 void describe_name(const name name)
 {
-  printf("%s %s", name.first_name, name.last_name);
+  printf("%s %s\n", name.first_name, name.last_name);
 }
