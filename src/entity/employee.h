@@ -4,6 +4,7 @@
 
 #include "address.h"
 #include "id.h"
+#include "department.h"
 #include "name.h"
 #include "phone.h"
 
@@ -13,7 +14,7 @@ typedef struct
 	unsigned int age;
 	address address;
 	name name;
-	char department[64];
+	department department;
 	phone phone;
 	double salary;
 } employee;
