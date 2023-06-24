@@ -8,4 +8,6 @@ void clear_screen();
 
 void pause();
 
+void close();
+
 #endif
