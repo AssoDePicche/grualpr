@@ -3,5 +3,5 @@
 
 void describe_address(const address address)
 {
-  printf("%s, %s (%s)\n", address.street, address.number, address.city);
+  printf("Endereço: %s, %s (%s)\n", address.street, address.number, address.city);
 }
