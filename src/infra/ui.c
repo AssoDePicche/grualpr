@@ -17,3 +17,7 @@ void pause()
   system("pause");
 }
 
+void close()
+{
+  exit(0);
+}
