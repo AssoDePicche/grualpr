@@ -3,5 +3,5 @@
 
 void describe_phone(const phone phone)
 {
-  printf("(%s) %s\n", phone.prefix, phone.number);
+  printf("Contato: (%s) %s\n", phone.prefix, phone.number);
 }
