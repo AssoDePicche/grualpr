@@ -6,4 +6,6 @@ void print_line();
 
 void clear_screen();
 
+void pause();
+
 #endif
