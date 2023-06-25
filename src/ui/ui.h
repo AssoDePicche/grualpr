@@ -4,7 +4,7 @@
 
 void print_line();
 
-void clear_screen();
+void clear();
 
 void pause();
 
