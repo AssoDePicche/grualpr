@@ -1,7 +1,7 @@
 CC    = gcc
 FLAGS = -Wall -O
 SRC   = $(wildcard ./src/*/*.c)
-OUT   = ./bin/main
+OUT   = ./bin/app
 
 default: compile run
 
