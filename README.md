@@ -16,6 +16,8 @@ git clone git@github.com:AssoDePicche/grualpr.git
 
 cd grualpr/
 
+mkdir bin/
+
 make
 
 ```
