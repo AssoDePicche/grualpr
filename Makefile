@@ -1,16 +1,14 @@
-FILENAME           = main
-COMPILER           = gcc
-COMPILER_FLAGS     = -Wall -O
-SRC                = ./src/
-OUT                = ./bin/
+CC    = gcc
+FLAGS = -Wall -O
+SRC   = $(wildcard ./src/*/*.c)
+OUT   = ./bin/main
 
 default: compile run
 
 compile:
-	$(COMPILER) $(SRC)$(FILENAME).c $(COMPILER_FLAGS) -o $(OUT)$(FILENAME)
-
+	$(CC) $(FLAGS) $(SRC) -o $(OUT)
 run:
-	$(OUT)$(FILENAME)
+	$(OUT)
 
 clean:
-	rm -rf $(OUT)*.exe
+	rm $(OUT)
