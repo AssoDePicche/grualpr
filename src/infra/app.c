@@ -116,6 +116,11 @@ void enroll_employee(employee *employees, const unsigned int size)
 
 void print_employees(const employee *employees, const unsigned int size)
 {
+  if (0 == size)
+  {
+    printf("Nenhum funcionário cadastrado!\n");
+  }
+
   for (unsigned int index = 0; index < size; ++index)
   {
     describe_employee(employees[index]);
